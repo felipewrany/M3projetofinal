@@ -14,4 +14,4 @@ router.get("/listid/:id", BebidaController.listId);
 
 router.delete("/delete/:id", BebidaController.delDelete);
 
-module.exports = router;
+module.exports = router; 
