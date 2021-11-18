@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const PratoPrincipalController = require('./../controllers/pratoPrincipais.controller');
+const PratoPrincipalController = require('./../controllers/pratosPrincipais.controller');
 
 router.get("/", PratoPrincipalController.index);
 
