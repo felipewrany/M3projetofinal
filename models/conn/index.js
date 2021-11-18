@@ -12,7 +12,7 @@ async function Connected() {
       }
     )
     .then(() => {
-      console.log("Conectado ao MongoDB/Atlas...");
+      console.log("Conectado ao MongoDB/Atlas");
     })
     .catch((err) => {
       console.log(err);
