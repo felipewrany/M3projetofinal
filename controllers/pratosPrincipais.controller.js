@@ -22,7 +22,7 @@ exports.postAdd = async (req,res) => {
 }
 
 exports.putUpdate = async (req,res) => {
-    if(id.length != 24){
+    if(req.params.id.length != 24){
         res.status(400).json({message: "ID incorreta!"});
         return true;
     }
@@ -52,7 +52,7 @@ exports.listAll = async (req,res) => {
 }
 
 exports.listId = async (req,res) => {
-    if(id.length != 24){
+    if(req.params.id.length != 24){
         res.status(400).json({message: "ID incorreta!"});
         return true;
     }
@@ -65,7 +65,7 @@ exports.listId = async (req,res) => {
 }
 
 exports.delDelete = async (req,res) => {
-    if(id.length != 24){
+    if(req.params.id.length != 24){
         res.status(400).json({message: "ID incorreta!"});
         return true;
     }
