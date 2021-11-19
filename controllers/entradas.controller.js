@@ -43,7 +43,7 @@ exports.putUpdate = async (req,res) => {
 }
 
 exports.listAll = async (req,res) => {
-    await Bebida.find({}).then((entradas) => {
+    await Entrada.find({}).then((entradas) => {
         res.status(200).json(entradas);
     }).catch((err) => {
         res.status(404).json({message: "Não há entradas na lista!"});
